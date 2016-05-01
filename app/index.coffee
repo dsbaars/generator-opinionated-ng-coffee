@@ -71,11 +71,11 @@ OpinionatedNgCoffeeGenerator = generators.Base.extend(
         return
 
     install: ->
-        # @installDependencies({
-        #     # callback: =>
-        #     #     @spawnCommand('grunt', [])
-        #     #     return
-        #     })
+        @installDependencies({
+            callback: =>
+                @spawnCommand('grunt', [])
+                return
+            })
         return
 )
 module.exports = OpinionatedNgCoffeeGenerator

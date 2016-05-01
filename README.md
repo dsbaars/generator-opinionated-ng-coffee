@@ -1,6 +1,69 @@
 # generator-opinionated-ng-coffee
 
-Opinionated yeoman generator for my AngularJS projects
+Opinionated yeoman generator for my AngularJS projects, based on my more general generator: [generator-ng-bootstrap-less](https://github.com/dsbaars/generator-ng-bootstrap-less)
+
+- jQuery 2.2
+- Bootstrap 3.3, Font Awesome 4.6
+- lodash, moment.js
+- Angular 1.5 + aria,animate,touch,sanitize,resource,i18n
+- ui-router
+
+Uses [johnpapa Angular Style](https://github.com/johnpapa/angular-styleguide) "ported" to [CoffeeScript](https://github.com/Plateful/plateful-mobile/wiki/AngularJS-CoffeeScript-Style-Guide) mixed with some own ideas.
+
+Still has both gulp and grunt. I hope to add prompts to the generator later.
+
+## What will it look like?
+```
+.
+├── Gruntfile.coffee
+├── app
+│   ├── coffee
+│   │   ├── app.coffee
+│   │   ├── app.module.coffee
+│   │   ├── app.router.coffee
+│   │   ├── components
+│   │   │   └── components.coffee
+│   │   ├── main
+│   │   │   └── main.controller.coffee
+│   │   ├── navbar
+│   │   │   └── navbar.controller.coffee
+│   │   └── services
+│   │       └── services.coffee
+│   └── less
+│       ├── app.less
+│       └── variables.less
+├── bower.json
+├── coffeelint.json
+├── config
+│   ├── clean.coffee
+│   ├── coffee.coffee
+│   ├── connect.coffee
+│   ├── copy.coffee
+│   ├── injector.coffee
+│   ├── less.coffee
+│   ├── uglify.coffee
+│   ├── usemin.coffee
+│   ├── useminPrepare.coffee
+│   └── watch.coffee
+├── gulp
+│   ├── config.json
+│   ├── gulpErrorHandler.coffee
+│   ├── gulpfile.coffee
+│   └── tasks
+│       ├── css.coffee
+│       ├── html.coffee
+│       ├── js.coffee
+│       ├── server.coffee
+│       └── watch.coffee
+├── gulpfile.js
+├── package.json
+└── public
+    ├── index.html
+    └── templates
+        ├── main.html
+        └── navbar
+            └── navbar.html
+```
 
 > [Yeoman](http://yeoman.io) generator
 
